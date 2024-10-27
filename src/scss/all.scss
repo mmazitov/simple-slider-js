@@ -5,5 +5,46 @@
   padding: 0;
 }
 
+.header {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.banner {
+	position: relative;
+}
+.slider {	
+	img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		&:not(img:first-child) {
+			display: none;
+		}
+	}
+}
+
+.arrows {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	button {
+		background: grey;
+		border-radius: 50%;
+		width: 30px;
+		aspect-ratio: 1;
+		color: #fff;
+		border: 2px solid transparent;
+		transition: border-color .3s ease;
+		&:hover {
+			border-color: #000;
+		}
+	}
+}
+
 
 
