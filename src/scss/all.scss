@@ -10,40 +10,50 @@
 	text-align: center;
 }
 
-.banner {
-	position: relative;
-}
+
 .slider {	
+	display: flex;
+	transition: transform 0.5s ease;
+  transform: translateX(0);
+	&-wrapper {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		max-width: 600px;
+		margin: auto;
+	}
 	img {
 		width: 100%;
-		height: 300px;
-		object-fit: cover;
-		&:not(img:first-child) {
-			display: none;
-		}
-	}
-}
-.arrows {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	button {
-		background: grey;
-		border-radius: 50%;
-		width: 30px;
-		aspect-ratio: 1;
-		color: #fff;
-		border: 2px solid transparent;
-		transition: border-color .3s ease;
-		&:hover {
-			border-color: #000;
-		}
+		min-width: 100%; /* Ensures all images take up 100% of the slider width */
+  	flex-shrink: 0;
 	}
 }
 
+.animate-next {
+	transform: translateX(-100%);
+}
+
+.animate-prev {
+	transform: translateX(100%);
+}
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+	z-index: 100;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
 
 
