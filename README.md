@@ -4,42 +4,22 @@
   &#xa0;
 </div>
 
-<h1 align="center">Markup Starter</h1>
+<h1 align="center">Simple JavaScript slider</h1>
 
 ## 🎯 About 
-**Markup Starter** is a project template that uses Gulp for automating development tasks such as compiling Pug and Sass, linting JavaScript, and optimizing images.
 
 
 
-## ✨ Gulp tasks
-- **pugTask:** Compiles Pug files into HTML.
-- **sassTask:** Compiles SCSS files into CSS and adds prefixes for cross-browser compatibility.
-- **jsTask:** Lints and compiles JavaScript files using Babel.
-- **fontsTask:** Copies fonts to the distribution folder.
-- **imagesTask:** Optimizes images and copies them to the distribution folder.
-- **picTask:** Copies pictures from the src/pic folder to the distribution folder.
-- **watchTask:** Starts the server and watches for file changes.
 
-## 🚀 Dependencies
-The project uses the following dependencies:
-- **@babel/core:** Babel compiler
-- **@babel/preset-env:** Babel preset for modern JavaScript features
-- **browser-sync:** Local server with automatic reloading
-- **gulp:** Task automation tool
-- **gulp-babel:** Used for compiling JavaScript with Babel
-- **gulp-clean-css:** CSS optimization and minification
-- **gulp-concat:** File concatenation
-- **gulp-eslint**: JavaScript file linting
-- **gulp-imagemin:** Image optimization
-- **gulp-pug:** Compiles Pug files into HTML
-- **gulp-sass:** Compiles Sass into CSS
-- **gulp-terser:** JavaScript minification
-- **sass:** Compiled Sass
+## ✨ Features:
+- Simple HTML structure, easy to integrate
+- Lightweight and minimalistic
+- Works on all modern browsers
 
 ## 🏁 Starting
 ```
 # Clone this project
-$ git clone https://github.com/mmazitov/markup-starter
+$ git clone https://github.com/mmazitov/simple-slider-js
 
 # Access
 $ cd markup-starter
