@@ -1,15 +1,20 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 	initSlider();
 });
 
 function initSlider() {
-	let slider = document.querySelector('.slider');
-	let nextBtn = document.querySelector('.next');
-	let prevBtn = document.querySelector('.prev');
+	const slider = document.querySelector('.slider');
+	const nextBtn = document.querySelector('.next');
+	const prevBtn = document.querySelector('.prev');
+	if (!slider || !nextBtn || !prevBtn) return;
+
 	nextBtn.onclick = () => {
-		slider.append(slider.querySelector('img:first-child'));
+		const firstImg = slider.firstElementChild;
+		if (firstImg) slider.append(firstImg);
 	};
+
 	prevBtn.onclick = () => {
-		slider.prepend(slider.querySelector('img:last-child'));
+		const lastImg = slider.lastElementChild;
+		if (lastImg) slider.prepend(lastImg);
 	};
 }
